@@ -18,7 +18,7 @@ async function bootstrap() {
     if (userInput === "/bye") break;
 
     const result = await chatService.query(userInput);
-    console.log("AI: ", result.answer);
+    console.log("AI: ", result);
   }
 
   rl.close();
